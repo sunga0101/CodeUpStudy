@@ -14,8 +14,14 @@ public class CodeUp1020 {
     public void print() {
         Scanner scanner = new Scanner(System.in);
         String id = scanner.nextLine();
-        String[] arr = id.split("-");
-        System.out.println(arr[0] + arr[1]);
+        // .substring을 이용한 방법
+        String frontPart = id.substring(0,6);
+        String backPart = id.substring(7);
+        System.out.println(frontPart+backPart);
+
+        //.split을 이용한 방법
+//        String[] arr = id.split("-");
+//        System.out.println(arr[0] + arr[1]);
     }
 
     public static void main(String[] args) throws IOException {

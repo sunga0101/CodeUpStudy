@@ -12,7 +12,10 @@ public class CodeUp1037 {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
 
+        int a = scanner.nextInt(2);
+
         System.out.println((char) num);
+        System.out.println("a는 "+a);
     }
 
     public static void main(String[] args) throws IOException {
