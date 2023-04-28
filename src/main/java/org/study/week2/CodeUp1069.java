@@ -9,18 +9,24 @@ import java.util.Scanner;
 public class CodeUp1069 {
     public void print() {
         Scanner scanner = new Scanner(System.in);
-        int iScore = scanner.nextInt();
-        String res;
-        if (iScore >= 90) {
-            res = "A";
-        } else if (iScore >= 70) {
-            res = "B";
-        } else if (iScore >= 40) {
-            res = "C";
-        } else {
-            res = "D";
+        String sComment = scanner.next();
+
+        switch (sComment) {
+            case "A":
+                System.out.println("best!!!");
+                break;
+            case "B":
+                System.out.println("good!!");
+                break;
+            case "C":
+                System.out.println("run!");
+                break;
+            case "D":
+                System.out.println("slowly~");
+                break;
+            default:
+                System.out.println("what?");
         }
-        System.out.println(res);
     }
 
     public static void main(String[] args) throws IOException {
